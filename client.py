@@ -1,9 +1,9 @@
 import socket
 
 def tcp_connection(target_host,target_port,payload):
-    # socket opject
+   
     tcp=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    #socket connect 
+   
     tcp.connect((target_host,target_port))
     
     tcp.sendall(f"{payload}\r\n".encode())
