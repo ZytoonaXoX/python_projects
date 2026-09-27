@@ -1,7 +1,7 @@
 import socket
 
-ip="127.0.0.1"
-port=1233
+ip=input("enter your server ip : ").strip()
+port=int(input("enter server port : "))
 
 server=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 server.bind((ip,port))
